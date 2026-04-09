@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info:
+  title: VCPI Backend API Contract Mirror
+  version: 1.0.0
+servers:
+  - url: http://127.0.0.1:8000/api/v1
+paths:
+  /health/:
+    get:
+      summary: Health check
+  /ingest/preview/:
+    post:
+      summary: Preview uploaded event log
+  /kpis/:
+    get:
+      summary: Basic process KPIs
+  /predictions/:
+    post:
+      summary: Predict failure probability
